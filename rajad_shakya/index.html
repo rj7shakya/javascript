@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2 id="title">Interview Test Questionnaire</h2>
+    <ul>
+        <li>Create a button with some width and height and a curved corner on top-right and bottom-left.
+            This button will toggle between red and blue background colors on click.</li>
+    </ul>
+    <div class="toggle"></div>
+    
+    <ul>
+        <li>Create a div of 100px * 50px and a button. The button click will rotate the div with its top left as
+            origin. If clicked again, the div will revert to its initial position. Here, red div is initial while blue is
+            the div after rotation</li>
+    </ul>
+    <div class="rotate"></div>
+    <ul>
+        <li>Create multiple choice radio button with another dropdown. According to the value of the radio
+            button, the options shown in dropdown changes. Eg:
+            o If Mobile is selected, in the dropdown, Android and iOS are shown as options.
+            o If PC is selected, in the dropdown, Windows, Linux and MacOS are shown as options</li>
+    </ul>
+    <form action="">
+        <p>Select your device:</p>
+        <input type="radio" id="mobile" name="device" value="mobile">
+        <label for="male">Mobile</label>
+        <input type="radio" id="pc" name="device" value="pc">
+        <label for="female">PC/Laptop</label>
+        <input type="radio" id="tablet" name="device" value="tablet">
+        <label for="other">Tablet</label>
+        <br>
+        <br>
+        <select id="mobiled">
+            <option value="os"> monile operating system used.</option>
+            <option value="android">Android </option>
+            <option value="iOS">Ios</option>
+          </select>
+          <select id="pcd">
+            <option value="os">pc/laptop operating system used.</option>
+            <option value="android">windows </option>
+            <option value="iOS">macos</option>
+            <option value="linux">Linux</option>
+          </select>
+          <select id="tabd">
+            <option value="os">tablet operating system used.</option>
+            <option value="android">android </option>
+            <option value="iOS">macos</option>
+            <option value="linux">Linux</option>
+          </select>
+    </form>
+
+
+    <ul>
+        <li>Create an array of length 10 with random values from range 1-99. Then count the tens value and
+            show it as consecutive *. Try to be logical in this question and don’t hard-code this part eg. &gt;0
+            and &lt;10. Think how you can implement the same code for bigger ranges like 1-999 without
+            increasing the code length.</li>
+        <br>
+        <ul>
+            <li>0-9  :<span id="i0"></span></li>
+            <li>10-19:<span id="i1"></span></li>
+            <li>20-29:<span id="i2"></span></li>
+            <li>30-39:<span id="i3"></span></li>
+            <li>40-49:<span id="i4"></span></li>
+            <li>50-59:<span id="i5"></span></li>
+            <li>60-69:<span id="i6"></span></li>
+            <li>70-79:<span id="i7"></span></li>
+            <li>80-89:<span id="i8"></span></li>
+            <li>90-99:<span id="i9"></span></li>
+        </ul>
+    </ul>
+
+
+
+    <script src="js/toggle.js"></script>
+    <script src="js/rotate.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/range.js"></script>
+</body>
+</html>

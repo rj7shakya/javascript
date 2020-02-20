@@ -1,0 +1,21 @@
+#title{
+    color: blue;
+}
+
+.toggle{
+    text-align: center;
+    /* margin: 0 auto; */
+}
+
+.rotate{
+    margin: 0 auto;
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    margin-bottom: 70px;
+}
+
+#mobiled, #pcd, #tabd{
+    width: 500px;
+    height: 25px;
+}
