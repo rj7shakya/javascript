@@ -23,6 +23,6 @@ function toggle(){
     }
 }
 
-button.addEventListener ("click", function() {
+button.addEventListener ("click", function(){
     toggle();
   });
