@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Contact from './components/Contact';
 
 class App extends Component {
   render() {
@@ -8,6 +9,8 @@ class App extends Component {
       <div className="App">
         <h1>The App Component</h1>
           <h4>Hello {name.toUpperCase()}</h4>
+          <Contact/>
+          <Contact/>
       </div>
     );
   }
