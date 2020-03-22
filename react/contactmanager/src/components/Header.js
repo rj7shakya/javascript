@@ -17,4 +17,5 @@ Header.defaultProps = {
 Header.propTypes = {
   branding: PropTypes.string.isRequired
 }
+
 export default Header;
