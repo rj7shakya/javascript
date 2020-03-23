@@ -18,13 +18,21 @@ class Contacts extends Component {
           phone: '555-455-5555'
         },
         {
-          id: 1,
+          id: 3,
           name: 'Henry Johnson',
           email: 'henry@gmail.com',
           phone: '555-545-5555'
         },
       ]
     };
+    deleteContact = (id)=>{
+      const {contacts} = this.state;
+      const newContacts = contacts.filter(contact => contact.id !== id);
+      this.setState({
+        contacts : newContacts
+      });
+    }
+
   
   render() {
     const {contacts} = this.state;
@@ -35,6 +43,7 @@ class Contacts extends Component {
             <Contact
               key={contact.id}
               contact={contact}
+              deleteClickHandler={this.deleteContact.bind(this,contact.id)}
             />
         ))}
       </React.Fragment>
