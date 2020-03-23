@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
+import Contact from './Contact'
+
 
 class Contacts extends Component {
-  constructor(){
-    super();
-    this.state={
+  state={
       contacts:[
         {
           id: 1,
@@ -24,8 +24,8 @@ class Contacts extends Component {
           phone: '555-545-5555'
         },
       ]
-    }
-  }
+    };
+  
   render() {
     const {contacts} = this.state;
 
@@ -33,13 +33,15 @@ class Contacts extends Component {
       <div>
         {
           contacts.map(contact=>(
-          <h1>{contact.name}</h1>
+            <Contact
+              key={contact.id}
+              contact={contact}
+            />
           ))
         }
         
       </div>
-    )
+    );
   }
 }
-
 export default Contacts;
