@@ -1,5 +1,6 @@
 import {combineReducers } from 'redux';
+import postReducers from './postReducer';
 
 export default combineReducers({
-  replaceMe:()=>'hi there'
+  posts: postReducers
 });
