@@ -29,7 +29,7 @@ const Logs = () => {
   )
 }
 
-export de
+
   const [logs,setLogs] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -38,4 +38,4 @@ export de
     const res = await fetch('/logs')
     const data = awa
   }
-fault Logs
+  export default Logs
