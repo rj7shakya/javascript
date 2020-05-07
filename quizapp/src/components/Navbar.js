@@ -38,7 +38,7 @@ export default function Navbar() {
           <Typography variant="h6" className={classes.title}>
             Quiz app
           </Typography>
-          <Button color="inherit" component={Link} to="/quiz">
+          <Button color="inherit" component={Link} to="/">
             Start quiz
           </Button>
           <Button color="inherit" component={Link} to="/setting">
